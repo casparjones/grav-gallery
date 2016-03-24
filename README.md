@@ -1,1 +1,2 @@
-# grav-gallery
+# Grav Gallery Plugin
+

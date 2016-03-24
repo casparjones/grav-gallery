@@ -1,0 +1,15 @@
+{
+   "project":"grav-plugin-gallery",
+   "platforms":{
+      "grav":{
+         "nodes":{
+            "plugin":[
+               {
+                  "source":"/",
+                  "destination":"/user/plugins/gallery"
+               }
+            ]
+         }
+      }
+   }
+}

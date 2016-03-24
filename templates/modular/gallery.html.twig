@@ -1,0 +1,26 @@
+{% set settings = {} %}
+
+{% if header.gallery %}
+    {% set settings =  header.gallery %}
+{% endif %}
+
+{% if page.header.gallery %}
+    {% set settings = settings|merge(page.header.gallery) %}
+{%  endif %}
+
+{% set settings = config.get('plugins.gallery')|merge(settings) %}
+{% set unique_id = 'ls-' ~ random_string(10) %}
+
+
+{% for image in page.media.images %}
+<div id="{{ unique_id }}-wrapper" class="thumbbox">
+    <div class="innerboximg">
+        <div id="{{ unique_id }}" class="thumbimgbox">
+            {{ image.lightbox(1024,768).cropResize(settings.gallery_thumb_width|default(200),settings.gallery_thumb_height|default(200)).html() }}
+        </div>
+    </div>
+</div>
+{% endfor %}
+
+
+

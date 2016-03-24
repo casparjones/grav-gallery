@@ -1,0 +1,48 @@
+.thumbbox, .descbox {
+    vertical-align: top;
+    display: -moz-inline-stack;
+    display: inline-block;
+    zoom: 1;
+    width: 228px;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #aaaaaa;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.innerboximg, .innerboximg_hover {
+    border: 1px solid #505050;
+    background: #cdcdcd;
+    color: #aaaaaa;
+}
+
+.innerboxdir, .innerboximg, .innerboxfile, .innerboxdir_hover, .innerboximg_hover, .innerboxfile_hover, .innerbox_marked {
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 7px;
+    padding: 0;
+    width: 223px;
+    height: 188px;
+}
+
+.thumbimgbox {
+    width: 227px;
+    height: 187px;
+    margin: 0;
+    padding: 0;
+    color: #aaaaaa;
+    cursor: pointer;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.thumbimgbox img {
+    border-radius: 3px;
+    margin: 10px 10px 5px 10px;
+    border: 1px solid #606060;
+    max-width: 200px;
+}
