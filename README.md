@@ -4,5 +4,5 @@
 - Install Gallery Plugin (extract to /user/plugins/ folder)
 - Enable Plugin
 - Use it with: 
-  ´´´{% include 'modular/gallery.html.twig' with {'page': page.find('/gallery')} %}
+  <pre>{% include 'modular/gallery.html.twig' with {'page': page.find('/gallery')} %}</pre>
   Your Page is in /gallery and show all Image on this page as Gallery
