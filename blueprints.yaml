@@ -11,6 +11,9 @@ keywords: gallery, plugin, slider, images, carousel
 bugs: https://github.com/casparjones/grav-gallery/issues
 license: MIT
 
+dependencies:
+  - featherlight
+
 form:
   validation: strict
   fields:
